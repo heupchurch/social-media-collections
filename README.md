@@ -2,8 +2,8 @@
 
 Various scripts for archiving and monitoring social media.  Updated as I make more things.
 
-- [Instagram](##Instagram)
-- [Twitter](##Twitter)
+- [Instagram](#Instagram)
+- [Twitter](#Twitter)
 
 ## Instagram
 
