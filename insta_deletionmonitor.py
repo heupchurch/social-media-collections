@@ -21,10 +21,10 @@ for post in Profile.from_username(L.context, TARGET).get_posts():
 chdir(TARGET)
 
 ##Check to see if history file exists for TARGET
-if Path(f"{TARGET}deletionhistory.txt").is_file() == False:
-    file = open(f"{TARGET}deletionhistory.txt", "w+")
-if Path(f"{TARGET}deletionhistory.txt").is_file() == True:
-    file = open(f"{TARGET}deletionhistory.txt", "a")
+if Path(f"{TARGET}_deletedposts.txt").is_file() == False:
+    file = open(f"{TARGET}_deletedposts.txt", "w+")
+if Path(f"{TARGET}_deletedposts.txt").is_file() == True:
+    file = open(f"{TARGET}_deletedposts.txt", "a")
 
 # Obtain set of posts on HD
 offline_posts = set(filter(lambda s: isinstance(s, Post),

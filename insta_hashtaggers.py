@@ -28,7 +28,7 @@ for post in L.get_hashtag_posts(TARGET):
         writer = csv.writer(f)
         writer.writerow([username, ID, account])
 
-        target = open(f'{TARGET}-taggers.csv', 'w')
+        target = open(f'{TARGET}_taggers.csv', 'w')
         unique_lines = set()
         source_lines = 0
         duplicate_lines = 0
@@ -44,7 +44,7 @@ for post in L.get_hashtag_posts(TARGET):
 		unique_lines.add(line_to_check)
         # Be nice and close out the file
         target.close()
-        
+
 
 # Let the user know what you did
-print f"FINISHED: see {TARGET}-taggers.csv"
+print f"FINISHED: see {TARGET}_taggers.csv"

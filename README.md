@@ -7,16 +7,16 @@ Various scripts for archiving and monitoring social media.  Updated as I make mo
 
 ## Instagram
 
-All scripts will accept multiple inputs.  Based on the [Instaloader](https://github.com/instaloader/instaloader) Python 3.7 module.  To get Instaloader, run `pip3 install instaloader`.
+All scripts will accept multiple inputs.  Based on the [Instaloader](https://github.com/instaloader/instaloader) Python 3.7 module.  See Instaloader documentation for simple account archiving.  To get Instaloader, run `pip3 install instaloader`.
 
 ### insta_deletionmonitor.py
 
-Coded in a fit of rage when I went to cite a photo in a geolocation only to discover that target had nuked his whole Insta, Instaspy will scrape posts from a target account, check previously archived posts against the online account at time of download, and output a text file listing any previously archived posts that the target has deleted.
+Coded in a fit of rage when I went to cite a photo in a geolocation only to discover that target had nuked his whole Insta, the deletion monitor will scrape posts from a target account, check previously archived posts against the online account at time of download, and output a text file listing any previously archived posts that the target has deleted.
 
 ```
 $ python3 insta_deletionmonitor.py USERNAME
 ```
-or add to crontab. `USERNAME` is a username minus @ symbol. The list of deletions is stored as `{USERNAME}deletionhistory.txt`.
+or add to crontab. `USERNAME` is a username minus @ symbol. The list of deletions is stored in the archive directory as `{USERNAME}_deletedposts.txt`.
 
 ### insta_hashtaggers.py
 
@@ -25,7 +25,7 @@ Outputs username, account link, and ID for all users posting in a hashtag.  Does
 ```
 $ python3 insta_hashtaggers.py HASHTAG
 ```
-`HASHTAG` is a hashtag minus # symbol.  Data stored as `{HASHTAG}-taggers.csv`
+`HASHTAG` is a hashtag minus # symbol.  Data stored as `{HASHTAG}_taggers.csv`
 
 ## Twitter
 
