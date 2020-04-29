@@ -7,11 +7,7 @@ Various scripts for archiving and monitoring social media.  Updated as I make mo
 
 ## Instagram
 
-All scripts will accept multiple inputs.  Based on the [Instaloader](https://github.com/instaloader/instaloader) Python 3.7 module.  To get Instaloader, run:
-
-```
-$ pip3 install instaloader
-```
+All scripts will accept multiple inputs.  Based on the [Instaloader](https://github.com/instaloader/instaloader) Python 3.7 module.  To get Instaloader, run `pip3 install instaloader`.
 
 ### insta_deletionmonitor.py
 
@@ -27,21 +23,18 @@ or add to crontab. `USERNAME` is a username minus @ symbol. The list of deletion
 Outputs username, account link, and ID for all users posting in a hashtag.  Does NOT archive posts.
 
 ```
-$ python3 hashtaggers.py HASHTAG
+$ python3 insta_hashtaggers.py HASHTAG
 ```
 `HASHTAG` is a hashtag minus # symbol.  Data stored as `{HASHTAG}-taggers.csv`
 
 ## Twitter
 
-All scripts will accept multiple inputs.  Based on [Twint](https://github.com/twintproject/twint).  To get Twint, run:
-
-```
-$ pip3 install twint
-```
+All scripts will accept multiple inputs.  Based on [Twint](https://github.com/twintproject/twint).  To get Twint, run
+`pip3 install twint`.
 
 ### twitter_account_archive.py
 
-Returns tweets including replies, followers, following, and likes for a Twitter user.
+Returns tweets, followers, following, and likes for a Twitter user.
 
 ```
 $ python3 twitter_account_archive.py USERNAME
